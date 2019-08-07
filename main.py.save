@@ -1,9 +1,0 @@
-import redis_caller as rc
-import temp_time as tat
-ciudad=["santiago ","nueva-york "]
-ciudades=["santiago ","nueva-york ","zurich ","auckland ", "georgia "]
-for i in ciudad:
- print(i)
- rc.getter(i)
-# print(tat.gettat(pos[0],pos[1]))
-# print(i)
