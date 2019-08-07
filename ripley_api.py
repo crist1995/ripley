@@ -1,12 +1,11 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request
 import redis_caller  as rc
-import redis_set
+import redis_set2
 from time import sleep
 import main
 from flask_socketio import SocketIO
-
-redis_set.set()
+redis_set2.set()
 app = Flask(__name__)
 socketio=SocketIO(app)
 

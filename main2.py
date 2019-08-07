@@ -1,7 +1,9 @@
+import redis
 import random
 import temp_time as tat
 import redis_set2
 import redis_caller as rc
+
 redis_set2.set()
 counter=0
 def conn(ciudad):
