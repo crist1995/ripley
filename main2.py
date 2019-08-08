@@ -8,11 +8,11 @@ def conn(ciudad):
    value=random.random()
    pos=rc.getter(ciudad)
    if(value< 0.1):
-#    print("hubo un problema con ",ciudad)
+    print("hubo un problema con ",ciudad)
     raise Exception("La api ha fallado")
    else:
 #    print(tat.gettat(pos[b'latitud'],pos[b'longitud']))
-    print(pos[b'latitud'],pos[b'longitud'])
-#    print("no ha habido problemas")
+#    print(pos[b'latitud'],pos[b'longitud'])
+    print("no ha habido problemas")
   except Exception as ex:
    conn(ciudad)

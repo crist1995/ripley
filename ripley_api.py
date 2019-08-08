@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import redis_caller  as rc
 import redis_set2
 from time import sleep
@@ -16,10 +16,9 @@ def test_message(message):
     data=main.cycle()
     emit({'data', data})
 
-@app.route('/api', methods=['GET'])
-def get_task(task_id):
-    #def fucnt
-    return jsonify({'response':'ok'})
+@app.route('/')
+def sessions():
+    return render_template('session.html')
 
 @app.errorhandler(404)
 def not_found(error):

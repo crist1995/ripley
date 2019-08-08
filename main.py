@@ -8,9 +8,9 @@ ciudad=["santiago","zurich"]
 ciudades=["santiago","nueva-york","zurich","auckland", "georgia"]
 def cycle():
  for i in ciudades:
-  print(i)
+#  print(i)
   main2.conn(i)
   pos= rc.getter(i)
-  print(pos[b'longitud'])
+#  print(pos[b'longitud'])
   data.append(tat.gettat(pos[b'latitud'],pos[b'longitud']))
  return data
