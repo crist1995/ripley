@@ -10,7 +10,7 @@ app = Flask(__name__)
 socketio=SocketIO(app)
 
 @socketio.on('update_info', namespace='/test')
-def test_message(message):
+def test_message():
   while true:
     time.sleep(10)
     data=main.cycle()

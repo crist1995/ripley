@@ -10,10 +10,10 @@ def conn(ciudad):
    value=random.random()
    pos=rc.getter(ciudad)
    if(value< 0.1):
-    print("hubo un problema con ",ciudad)
+#    print("hubo un problema con ",ciudad)
     raise Exception("La api ha fallado")
    else:
-    print("no ha habido problemas")
+#    print("no ha habido problemas")
     info=tat.gettat(pos[b'latitud'],pos[b'longitud'])
     data.append(info[0])
     data2.append(info[1])
